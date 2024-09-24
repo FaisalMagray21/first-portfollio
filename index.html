@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const text = "full stack web developer";
+        const speed = 100;
+        let i = 0;
+
+        function typeWriter() {
+          if (i < text.length) {
+            document.getElementById("title").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+
+        setTimeout(typeWriter, 4000);
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const text = "HI i am faisal mehmood";
+        const speed = 100;
+        let i = 0;
+
+        function typeWriter() {
+          if (i < text.length) {
+            document.getElementById("titile2").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+
+        setTimeout(typeWriter, 1000);
+      });
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-600">
+    <header>
+      <div
+        href="#"
+        id="titile2"
+        class="text-white text-center pt-3 font-bold uppercase text-5xl hover:text-green-400 transition duration-300"
+      ></div>
+      <div class="px-3 py-3 text-black">
+        <div class="flex justify-between items-center">
+          <a
+            href="#"
+            class="font-bold text-xl hover:text-red-400 transition duration-300"
+          >
+            FM
+          </a>
+          <div class="px-4 py-4 text-black">
+            <ul class="flex space-x-4 justify-end items-end capitalize text-xl">
+              <li class="px-4 py-2 hover:text-green-400 hover:underline">
+                skill
+              </li>
+              <li class="px-4 py-2 hover:text-green-400 hover:underline">
+                projects
+              </li>
+              <li class="px-4 py-2 hover:text-green-400 hover:underline">
+                experience
+              </li>
+              <li class="px-4 py-2 hover:text-green-400 hover:underline">
+                aboutme
+              </li>
+              <li
+                class="fab fa-instagram fa-lg px-4 py-2 m-2.5 hover:text-pink-500"
+              ></li>
+              <li
+                class="fab fa-twitter fa-lg px-4 py-2 m-2.5 hover:text-blue-500"
+              ></li>
+              <li
+                class="fab fa-linkedin fa-lg px-4 py-2 m-2.5 hover:text-blue-500"
+              ></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <main class="flex justify-between items-center h-screen p-8">
+        <div class="w-1/2">
+          <h1
+            id="title"
+            class="text-6xl font-bold mb-4 text-center uppercase"
+          ></h1>
+
+          <p id=" title3" class="text-lg mb-6">
+            i am a professional responsible for working on both front-end and
+            back-end development processes
+          </p>
+        </div>
+
+        <div class="w-1/2">
+          <img
+            src="faisal.jpg"
+            alt="Sample Image"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+      </main>
+    </header>
+  </body>
+</html>
